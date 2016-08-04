@@ -3,14 +3,45 @@
   src: url(../assets/Fonts/articulat_web_font_format);
   src: url(articulatcf-bold-webfont.woff) format('woff');
 }*/
+/*MATERIALIZE CSS*/
 
+/*MAIN CSS*/
 body {
   background-color: rgb(0,122,255);
 }
 
+header {
+  width: 100%;
+  position: fixed;
+}
+
+.logo {
+  margin: 30px;
+  font-size: 20px;
+  font-weight: 200;
+  padding-left: 15px;
+}
+
+#contact {
+  /*margin: 30px;*/
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: 200;
+  padding: 0px;
+  /*position: fixed;*/
+}
+
+#aboutus {
+  /*margin: 30px;*/
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: 200;
+  padding: 0px;
+  /*position: fixed;*/
+}
 
 #welcome{
-  height: 93vh;
+  height: 100vh;
 }
 
 .jumbotron{
