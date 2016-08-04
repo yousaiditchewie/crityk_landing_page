@@ -1,0 +1,33 @@
+/*@font-face {
+  font-family: "articulat";
+  src: url(../assets/Fonts/articulat_web_font_format);
+  src: url(articulatcf-bold-webfont.woff) format('woff');
+}*/
+
+body {
+
+}
+
+
+#welcome{
+  height: 93vh;
+}
+
+.jumbotron{
+  background-image: url(../assets/Photos/Teengirleatingaburger.jpg);
+  background-size: cover;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: rgb(255, 255, 255);
+  border-top: 1px solid rgb(224, 224, 224);
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: rgb(224, 224, 224);
+}
+
+.transparent {
+  /*opacity: 0;*/
+}
