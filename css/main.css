@@ -82,6 +82,7 @@ header {
     ),
     url(../assets/Photos/JungeLeuteessenSushiinAsiaRestaurant.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 .main {
