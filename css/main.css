@@ -76,9 +76,19 @@ header {
   text-align: center;
   width: 100%;
   height: 60%;
-  margin-top: 40%;
+  margin-top: 10%;
   margin-bottom: 40%;
   position: relative;
+}
+
+#signup{
+  font-weight: 200;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid white;
+  border-radius: 3px;
 }
 
 .footer {
