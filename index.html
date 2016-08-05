@@ -6,6 +6,8 @@
   <!-- Compiled and minified Materialize CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/fontstylesheet.css">
+  <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
   <!-- Compiled and minified Materialize JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
 
@@ -29,34 +31,44 @@
     </div> -->
 
     <!-- video jumbotron -->
-    <div id="welcome" class="jumbotron row">
-      <!-- <div id="innerDiv"> -->
-        <!-- navbar -->
-        <header class="left col s10 offset-s1">
-          <!-- <div class="col offset-s1"> -->
-            <div class="logo">
-              <a href="#" class="brand-logo white-text left">
-                <img src="./assets/logo/CritykQuill_white_shadow.svg" alt="Feather">
-                <img src="./assets/Logo/CritykTypefont_white_shadow.svg" alt="Critic">
-              </a>
-            </div>
-          <!-- </div> -->
-            <div class="links hide-on-small-only">
-              <div><a href="#" id="contact" class="white-text right">CONTACT</a></div>
-              <div><a href="#" id="aboutus" class="white-text right">ABOUT US</a></div>
-            </div>
-            <!-- <div class="offset-s11"></div> -->
-        </header>
+  <div id="welcome" class="jumbotron row">
+    <!-- <div id="innerDiv"> -->
+      <!-- navbar -->
+      <header class="left col s10 offset-s1">
+        <!-- <div class="col offset-s1"> -->
+          <div class="logo">
+            <a href="#" class="brand-logo white-text left">
+              <img id="critykLogo" src="./assets/logo/CritykQuill_white_shadow.svg" alt="Critic Logo">
+              <img id="critykBrand" src="./assets/Logo/CritykTypefont_white_shadow.svg" alt="Critic">
+            </a>
+          </div>
+        <!-- </div> -->
+          <div class="links hide-on-small-only">
+            <div><a href="#" id="contact" class="white-text shadows right">CONTACT</a></div>
+            <div><a href="#" id="aboutus" class="white-text shadows right">ABOUT US</a></div>
+          </div>
+          <!-- <div class="offset-s11"></div> -->
+      </header>
 
-        <div class="container valign-wrapper">
-          <div class="main col s10 offset-s1">
-            <h1 class="white-text" style="font-weight: 500">WE KNOW YOU LIKE FOOD</h1>
-            <h2 class="white-text" style="font-weight: 200">GOOD NEWS! FOOD LIKES YOU TOO</h2>
-            <a id="signup" href="#" class="white-text">GET ALONG WITH FOOD ON CRITYK</a>
+      <div class="container valign-wrapper">
+        <div class="main col s10 offset-s1">
+          <h1 class="white-text shadows" style="font-weight: 400">WE KNOW YOU LIKE FOOD</h1>
+          <h3 class="white-text shadows" style="font-weight: 200">GOOD NEWS! FOOD LIKES YOU TOO</h3>
+          <a id="signup" href="#modal1" class="white-text modal-trigger shadows">GET ALONG WITH FOOD ON CRITYK</a>
+          <!-- MODAL -->
+          <div id="modal1" class="modal">
+            <div class="modal-content">
+              <h4>Modal Header</h4>
+              <p>A bunch of text</p>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+            </div>
           </div>
         </div>
-      <!-- </div> -->
-    </div>
+      </div>
+    <!-- </div> -->
+  </div>
 
 
 
@@ -64,7 +76,7 @@
     <div class="footer row">
       <div class="row">
         <ul class="col s6 m3 l2">
-          <li><p class="white-text">This is the footer</p></li>
+          <li><p class="white-text shadows">This is the footer</p></li>
         </ul>
       </div>
     </div>

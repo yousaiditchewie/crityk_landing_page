@@ -1,8 +1,7 @@
-/*@font-face {
-  font-family: "articulat";
-  src: url(../assets/Fonts/articulat_web_font_format);
-  src: url(articulatcf-bold-webfont.woff) format('woff');
-}*/
+@font-face {
+  font-family: "articulat_cfbold", sans-serif;
+  src: url(./fontstylesheet.css);
+}
 /*MATERIALIZE CSS*/
 
 /*MAIN CSS*/
@@ -22,6 +21,16 @@ header {
   padding-left: 15px;
  /* max-width: 208px;
   max-height: 43px;*/
+}
+
+#critykLogo{
+  -webkit-filter: drop-shadow(0px 1px 5px rgba(0,0,0,0.5));
+  filter:         drop-shadow(0px 0px 5px rgba(0,0,0,0.5));
+}
+
+/*TEXT SHADOW*/
+.shadows {
+  text-shadow: 0px 1px 5px rgba(0,0,0,0.5);
 }
 
 .links {
@@ -47,9 +56,19 @@ header {
 }
 
 #welcome{
-  height: 100vh;
+  height: 100%;
 }
 
+#signup{
+  font-weight: 200;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid white;
+  border-radius: 3px;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.5);
+}
 /*#innerDiv {
   z-index: 1;
   background-size: cover;
@@ -81,15 +100,6 @@ header {
   position: relative;
 }
 
-#signup{
-  font-weight: 200;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border: 1px solid white;
-  border-radius: 3px;
-}
 
 .footer {
   padding-top: 60px;
