@@ -52,7 +52,7 @@ header {
 }
 
 #welcome{
-  height: 90vh;
+  /*height: 90vh;*/
   margin-bottom: 0;
 }
 
@@ -75,6 +75,7 @@ header {
 
 .jumbotron{
   z-index: -1;
+  max-height: 90vh;
   background:
     linear-gradient(
       rgba(0,0,0,0.65),
@@ -92,6 +93,30 @@ header {
   margin-top: 10%;
   margin-bottom: 40%;
   position: relative;
+}
+
+/*BREAK*/
+.break{
+  height: 100px;
+}
+
+/*SECTION 2*/
+#s2photo {
+  background-image: url(../assets/Photos/Teengirleatingaburger.jpg);
+  height: 500px;
+}
+
+.photo {
+  background-position: center;
+  max-width: 50%;
+  position: relative;
+}
+
+.words {
+  height: 500px;
+  max-width: 50%;
+  background-color: #007AFF;
+  color: white;
 }
 
 .footer {
