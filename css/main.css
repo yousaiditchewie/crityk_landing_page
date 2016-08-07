@@ -4,6 +4,10 @@
   src: url(./fontstylesheet.css);
 }*/
 
+/*HIDE MOBILE*/
+.mobile {
+  display: none;
+}
 
 /*MAKESHIFT NAV-BAR*/
 header {
