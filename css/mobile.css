@@ -135,12 +135,12 @@
 
   .footer {
     margin-bottom: 0px;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    /*padding-top: 60px;*/
+    /*padding-bottom: 60px;*/
     background-color: #007AFF;
-    border-top: 1px solid rgba(224, 224, 224);
-    border-top-width: 1px;
-    border-top-style: solid;
-    border-top-color: rgb(224, 224, 224);
+    /*border-top: 1px solid rgba(224, 224, 224);*/
+    /*border-top-width: 1px;*/
+    /*border-top-style: solid;*/
+    /*border-top-color: rgb(224, 224, 224);*/
   }
 

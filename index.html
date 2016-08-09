@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="./css/main.css">
   <!-- <link rel="stylesheet" href="./css/fontstylesheet.css"> -->
   <!-- <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css"> -->
-  <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script> -->
+  <script   src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script>
   <!-- COMPILED AND MINIFIED MATERIALIZE JAVASCRIPT -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
 
@@ -17,8 +18,7 @@
 <body>
   <div class="wrapper">
 
-
-    <!-- JUMBOTRON/VIDEO TO BE ADDED -->
+    <!-- JUMBOTRON/VIDEO -->
     <div id="welcome" class="jumbotron row">
       <!-- VIDEO BACKGROUND -->
       <div id="desktop" class="iframe-wrapper">
@@ -27,14 +27,14 @@
       <!-- NAVBAR -->
       <header class="left col s10 offset-s1">
           <div class="logo">
-            <a href="#" class="brand-logo white-text left s10">
+            <a href="#aboutus" class="brand-logo white-text left s12">
               <img id="critykLogo" src="./assets/logo/CritykQuill_white_shadow.svg" alt="Critic Logo">
               <img id="critykBrand" src="./assets/Logo/CritykTypefont_white_shadow.svg" alt="Critic">
             </a>
           </div>
           <div class="links hide-on-small-only">
             <div><a href="#" id="contact" class="white-text shadows right">CONTACT</a></div>
-            <div><a href="#" id="aboutus" class="white-text shadows right">ABOUT US</a></div>
+            <div><a href="#aboutus" id="aboutuslink" class="white-text shadows right">ABOUT US</a></div>
           </div>
       </header>
 
@@ -50,8 +50,8 @@
           <!-- MODAL -->
           <div id="modal1" class="modal">
             <div class="modal-content">
-              <h4>We'd love to tell you more about CRITYK</h4>
-              <p>We promise not to get jalapeño business</p>
+              <h4 style="color: #007AFF; font-weight: 300;">We'd love to tell you more about CRITYK</h4>
+              <p style="color: #007AFF; font-weight: 300;">We promise not to get jalapeño business</p>
             </div>
             <div class="modal-footer">
               <div class="input-field col s12">
@@ -65,7 +65,7 @@
                   <div id="mc_embed_signup_scroll">
                     <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
                     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4da86a60ac74d04f3814bc951_bd0f21449d" tabindex="-1" value=""></div>
-                    <div class="clear"><input type="submit" value="Sign me up!" name="subscribe" id="mc-embedded-subscribe" class="button modal-action modal-close waves-effect waves-green btn-flat"></div>
+                    <div class="clear"><input type="submit" value="Sign me up!" name="subscribe" id="mc-embedded-subscribe" class="button modal-action modal-close waves-effect waves-green btn-flat" style="color: #007AFF;"></div>
                   </div>
                 </form>
                 </div>
@@ -141,22 +141,119 @@
   <!-- BREAK -->
   <div class="break"></div>
 
+  <!-- ABOUT US -->
+  <div id="aboutus" class="row">
+
+    <div class="container">
+      <img id="love" src="./assets/Logo/love.svg" alt="" class="col s8 offset-s2">
+    </div>
+
+    <!--<div class="col s8 offset-s2">
+      <h1 class="center">We are CRITYK</h1>
+      <h3 class="center">This is who we are</h3>
+      <p class="flow-text center">The quick brown fox jumped over the lazy dog.</p>
+      <div class="center-align">
+        <a id="action" href="#">CALL TO ACTION</a>
+      </div> -->
+    <!-- </div> -->
+  </div>
+
+  <!-- PARALLAX -->
+  <div class="parallax-container">
+      <div class="parallax"><img src="./assets/Photos/Explore_A.png"></div>
+  </div>
+
   <!-- SECTION 2 -->
   <div id="section2" class="row">
     <div id="s2photo" class="photo right col s6"></div>
+    <div class="words left col s6">
+      <h2 class="shadows">TALK FOODIE!</h2>
+      <h5 class="flex-text">The quick brown fox jumped over the lazy dog, and like the</h5>
+      <a href="#!">   ACTION   </a>
+    </div>
+  </div>
 
-
-    <div class="words left"><h1>Hello World</h1></div>
+  <!-- SIGN UP FORM -->
+  <div id="signup2">
+    <h3 class="center-align">Be a CRITYK</h3>
+      <!-- BEGIN MAILCHIMP SIGN UP FORM -->
+      <style type="text/css">
+       #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+      </style>
+      <div id="mc_embed_signup">
+      <div class="container">
+      <form action="http://crityk.us13.list-manage.com/subscribe/post?u=4da86a60ac74d04f3814bc951&amp;id=bd0f21449d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+          <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4da86a60ac74d04f3814bc951_bd0f21449d" tabindex="-1" value=""></div>
+          <div class="clear center-align"><input type="submit" value="Sign me up!" name="subscribe" id="mc-embedded-subscribe" class="button waves-effect waves-green btn-flat" style="color: #007AFF; border: 1px solid #007AFF"></div>
+        </div>
+      </form>
+      </div>
+      <!--END MAILCHIMP SIGN UP FORM-->
+    </div>
   </div>
 
   <!-- FOOTER -->
-  <div class="footer row">
+  <div class="page-footer footer row">
     <div class="row">
-      <ul class="col s6 m3 l2">
-        <li><p class="white-text shadows">&copy SKS Solutions LLC</p></li>
-      </ul>
+      <div class="col l2 offset-l1 s6">
+        <h5 class="white-text">Crityk</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="#!">Support</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="col l2 s6">
+        <h5 class="white-text">Company</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="#!">About</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Careers</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Blog</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Press</a></li>
+        </ul>
+      </div>
+      <div class="col l2 s6">
+        <h5 class="white-text">Legal</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="#!">Terms of Service</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Privacy Policy</a></li>
+        </ul>
+      </div>
     </div>
   </div>
+  <footer>
+    <div class="footer-copyright">
+      <div class="container">
+       © SKS Solutions LLC
+      </div>
+    </div>
+  </footer>
+<!--   <footer class="page-footer footer">
+           <div class="container">
+             <div class="row">
+               <div class="col l6 s12">
+                 <h5 class="white-text">Footer Content</h5>
+                 <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+               </div>
+               <div class="col l4 offset-l2 s12">
+                 <h5 class="white-text">Links</h5>
+                 <ul>
+                   <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                   <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                   <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                   <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                 </ul>
+               </div>
+             </div>
+           </div>
+           <div class="footer-copyright">
+             <div class="container">
+             © 2014 Copyright Text
+             <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+             </div>
+           </div>
+         </footer> -->
 
   </div>
   <script src="./scripts/main.js"></script>
