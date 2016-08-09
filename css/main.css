@@ -89,6 +89,7 @@ header {
 #welcome{
   /*height: 90vh;*/
   margin-bottom: 0;
+  min-height: 800px;
 }
 
 .goodnews {
