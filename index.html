@@ -7,49 +7,33 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/mobile.css">
-  <link rel="stylesheet" href="./css/fontstylesheet.css">
+  <!-- <link rel="stylesheet" href="./css/fontstylesheet.css"> -->
   <!-- <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css"> -->
   <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
-  <!-- Compiled and minified Materialize JavaScript -->
+  <!-- COMPILED AND MINIFIED MATERIALIZE JAVASCRIPT -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
 
 </head>
 <body>
   <div class="wrapper">
-
-  <!-- nav bar NOT BEING USED -->
-  <!--   <div class="navbar-fixed">
-
-    <nav class="transparent z-debth-0">
-       <div class="nav-wrapper">
-         <a href="#" class="brand-logo white-text center-align" style="font-weight: 200; padding-left: 15px">CRITYK</a>
-         <ul id="nav-mobile" class="right hide-on-med-and-down">
-           <li><a href="#" class="white-text">Hello</a></li>
-           <li><a href="#" class="white-text">World</a></li>
-           <li><a href="#" class="white-text">Yes</a></li>
-         </ul>
-       </div>
-     </nav>
-    </div> -->
-
-  <!-- JUMBOTRON/VIDEO TO BE ADDED -->
-  <div id="welcome" class="jumbotron row">
-    <!-- <div id="innerDiv"> -->
-      <!-- navbar -->
+    <!-- JUMBOTRON/VIDEO TO BE ADDED -->
+    <div id="welcome" class="jumbotron row">
+      <!-- VIDEO BACKGROUND -->
+      <div id="desktop" class="iframe-wrapper">
+        <iframe src="https://player.vimeo.com/video/177774783?background=1" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+      <!-- NAVBAR -->
       <header class="left col s10 offset-s1">
-        <!-- <div class="col offset-s1"> -->
           <div class="logo">
-            <a href="#" class="brand-logo white-text left">
+            <a href="#" class="brand-logo white-text left s10">
               <img id="critykLogo" src="./assets/logo/CritykQuill_white_shadow.svg" alt="Critic Logo">
               <img id="critykBrand" src="./assets/Logo/CritykTypefont_white_shadow.svg" alt="Critic">
             </a>
           </div>
-        <!-- </div> -->
           <div class="links hide-on-small-only">
             <div><a href="#" id="contact" class="white-text shadows right">CONTACT</a></div>
             <div><a href="#" id="aboutus" class="white-text shadows right">ABOUT US</a></div>
           </div>
-          <!-- <div class="offset-s11"></div> -->
       </header>
 
       <div class="container valign-wrapper">
@@ -65,74 +49,48 @@
             </div>
             <div class="modal-footer">
               <div class="input-field col s12">
-                <!-- <form action="//crityk.us13.list-manage.com/subscribe/post?u=4da86a60ac74d04f3814bc951&amp;id=bd0f21449d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                  <label for="mce-EMAIL">Email</label>
-                  <input id="email" type="email" value="" name="EMAIL" class="validate">
-                </form> -->
-
- <!-- Begin MailChimp Signup Form -->
- <!-- <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css"> -->
- <style type="text/css">
-  #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-  /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
- </style>
- <div id="mc_embed_signup">
- <form action="http://crityk.us13.list-manage.com/subscribe/post?u=4da86a60ac74d04f3814bc951&amp;id=bd0f21449d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-      <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4da86a60ac74d04f3814bc951_bd0f21449d" tabindex="-1" value=""></div>
-      <div class="clear"><input type="submit" value="Sign me up!" name="subscribe" id="mc-embedded-subscribe" class="button modal-action modal-close waves-effect waves-green btn-flat"></div>
-    </div>
- </form>
- </div>
-
- <!--End mc_embed_signup-->
-
-              <!-- FORM GOES HERE  -->
+                <!-- BEGIN MAILCHIMP SIGN UP FORM -->
+                <style type="text/css">
+                 #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+                </style>
+                <div id="mc_embed_signup">
+                <form action="http://crityk.us13.list-manage.com/subscribe/post?u=4da86a60ac74d04f3814bc951&amp;id=bd0f21449d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                  <div id="mc_embed_signup_scroll">
+                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4da86a60ac74d04f3814bc951_bd0f21449d" tabindex="-1" value=""></div>
+                    <div class="clear"><input type="submit" value="Sign me up!" name="subscribe" id="mc-embedded-subscribe" class="button modal-action modal-close waves-effect waves-green btn-flat"></div>
+                  </div>
+                </form>
+                </div>
+                <!--END MAILCHIMP SIGN UP FORM-->
               </div>
-              <!-- <button type="submit" class="modal-action modal-close waves-effect waves-green btn-flat">Sign me up!</button> -->
             </div>
           </div>
         </div>
       </div>
-    <!-- </div> -->
-  </div>
-
+    </div>
   <!-- MOBILE MAIN PAGE -->
+
+
+  </div> <!-- ENDS 'WRAPPER' DIV -->
 
 
   <!-- BREAK -->
   <div class="break"></div>
 
   <!-- SECTION 2 -->
-  <div class="row">
+  <!-- <div class="row">
     <div id="s2photo" class="photo right col s6"></div>
 
 
     <div class="words left"><h1>Hello World</h1></div>
-  </div>
-
-
-  <!-- MAIL CHIMP TEST -->
-  <div class="row">
-    <div class="col s6 offset-s3">
-
-
-
-    </div>
-  </div>
-
-
-
-  <!-- END MAIL CHIMP TEST -->
+  </div> -->
 
   <!-- FOOTER -->
   <div class="footer row">
     <div class="row">
       <ul class="col s6 m3 l2">
-        <li><p class="white-text shadows">This is the footer</p></li>
+        <li><p class="white-text shadows">&copy SKS Solutions LLC</p></li>
       </ul>
     </div>
   </div>
