@@ -168,7 +168,9 @@ header {
 }
 
 #aboutus h3 {
-  font-weight: 200;
+  margin-top: 0px;
+  font-size: 45px;
+  font-weight: 300;
 }
 
 #aboutus a {
@@ -220,13 +222,13 @@ header {
 
 #s2photo {
   background:radial-gradient(
-      rgba(0,0,0,0.15),
-      rgba(0,0,0,0.55)
+      rgba(0,0,0,0.05),
+      rgba(0,0,0,0.50)
     ),
     url(../assets/Photos/Teengirleatingaburger.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  /*background-size: ;*/
+  background-size: cover;
   height: 100%;
 }
 
