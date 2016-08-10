@@ -95,10 +95,14 @@
   <!-- ABOUT US -->
   <div id="aboutus" class="row">
 
-    <div class="col s12 center-align container">
-      <h3 class="left s4 offset-s1">Nothing speaks to the</h3>
-      <img id="love" src="./assets/Logo/love.svg" alt="heart" class="center-align s1">
-      <h3 class="right s4">of food like CRITYK</h3>
+    <div class="container">
+      <div class="center-align">
+        <div id="nothing_container">
+          <h3 id="nothing" class="">Nothing speaks to the</h3>
+          <img id="love" src="./assets/Logo/love.svg" alt="heart" class="">
+          <h3 id="offood" class="">of food like CRITYK</h3>
+        </div>
+      </div>
     </div>
 
   </div>
@@ -152,18 +156,39 @@
       <div class="col l2 s6">
         <h5 class="white-text">Company</h5>
         <ul>
-          <li><a class="grey-text text-lighten-3" href="#!">About</a></li>
+          <li><a class="grey-text text-lighten-3 modal-trigger" href="#aboutfooter">About</a></li>
           <li><a class="grey-text text-lighten-3" href="#!">Careers</a></li>
           <li><a class="grey-text text-lighten-3" href="#!">Blog</a></li>
           <li><a class="grey-text text-lighten-3" href="#!">Press</a></li>
         </ul>
+        <!-- COMPANY MODALS -->
+        <div id="aboutfooter" class="modal modal-fixed-footer">
+          <div class="modal-content">
+            <h4>About Crityk</h4>
+            <p>Food -- its very mention evokes emotion. We here at Crityk want you to express your taste and be a part of a movement; to help the food that makes us smile, shine, and the food that could use some love. Crityk offers quality feedback to the food community that breathes life to better dining experiences.<br> <br> Food is art, taste is the judge. Be a Crityk.</p>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+          </div>
+        </div>
       </div>
       <div class="col l2 s6">
         <h5 class="white-text">Legal</h5>
         <ul>
-          <li><a class="grey-text text-lighten-3" href="#!">Terms of Service</a></li>
+          <li><a class="modal-trigger grey-text text-lighten-3" href="#termsofservice">Terms of Service</a></li>
           <li><a class="grey-text text-lighten-3" href="#!">Privacy Policy</a></li>
         </ul>
+        <!-- LEGAL MODALS -->
+        <div id="termsofservice" class="modal modal-fixed-footer">
+          <div class="modal-content">
+            <h4>Terms of Service</h4>
+            <p>Place Terms of Service here</p>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>

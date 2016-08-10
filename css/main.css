@@ -159,15 +159,28 @@ header {
 }
 
 #love {
+  padding: 0px;
+  margin: 0px;
   width: 46px;
   height: 53px;
 }
 
-#aboutus h1 {
+#nothing_container {
+  height: 54px;
+  width: 913px;
+}
+
+#nothing {
+  max-width: 447px;
+  height: auto;
+  margin-top: 0px;
+  font-size: 45px;
   font-weight: 300;
 }
 
-#aboutus h3 {
+#offood {
+  max-width: 383px;
+  height: auto;
   margin-top: 0px;
   font-size: 45px;
   font-weight: 300;
