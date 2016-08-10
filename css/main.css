@@ -136,6 +136,12 @@ header {
   position: relative;
 }
 
+/*SPACER DIV TO PUSH ARROW BUTTON DOWN*/
+#spacer {
+  height: 175px;
+  width: 100%;
+}
+
 /*BREAK*/
 .break{
   height: 20px;
