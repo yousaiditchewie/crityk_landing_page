@@ -12,6 +12,7 @@
 body {
   backgroung: white;
 }
+/*MAIN LANDING PAGE JUMBOTRON AND VIDEO*/
 
 /*VIDEO CSS*/
 
@@ -61,11 +62,6 @@ header {
 #critykLogo{
   -webkit-filter: drop-shadow(0px 1px 5px rgba(0,0,0,0.5));
   filter:         drop-shadow(0px 0px 5px rgba(0,0,0,0.5));
-}
-
-/*TEXT SHADOW*/
-.shadows {
-  text-shadow: 0px 2px 8px rgba(0,0,0,0.65);
 }
 
 .links {
@@ -148,7 +144,9 @@ header {
   background: white;
 }
 
-/*ABOUT US*/
+
+/****ABOUT US****/
+
 #aboutus {
   background-color: white;
   margin-left: 0px;
@@ -175,9 +173,8 @@ header {
 }
 #delights_spots img {
   margin-top: 20px;
-  width: 100%;
+  width: 85%;
 }
-/*RESPONSIVE ABOUT US*/
 #aboutus h5 {
   font-weight: 300;
   width: 100%;
@@ -263,35 +260,61 @@ header {
   }
 }
 
-/*PARALLAX*/
+/****PARALLAX****/
 .parallax-container {
   z-index: 2;
   height: 350px;
 }
 
-/*SECTION 2*/
-#section2 {
-  border-top: 50px solid white;
-  height: 650px;
+/****BREAK 2****/
+#break2 {
+  height: 50px;
+  background: white;
+}
+/****INFO SECTION HELPERS****/
+#info_section {
+  margin-bottom: 0px;
+}
+
+.info_section_wrapper {
+  height: 780px;
   background: white;
   z-index: 1;
   margin-bottom: 0px;
 }
 
-#section2 h2 {
+@media screen and (max-width: 1200px) {
+  .info_section_wrapper {
+    height: 70vh;
+  }
+}
+.info_section_photo {
+  height: 100%;
+}
+
+/****EXPLORE & DISCOVER****/
+
+/*#explore_discover {
+  height: 720px;
+  background: white;
+  z-index: 1;
+  margin-bottom: 0px;
+}*/
+
+#explore_discover h2 {
   margin-top: 15%;
   margin-left: 5%;
   font-weight: 200;
 }
 
-#section2 h5 {
+#explore_discover h5 {
   font-weight: 200;
   margin-left: 5%;
   margin-right: 20%;
   margin-bottom: 30px;
 }
 
-#section2 a {
+#explore_discover a {
   color: white;
   font-weight: 300;
   margin-left: 15%;
@@ -300,27 +323,19 @@ header {
   border-radius: 5px;
   box-shadow: 0px 1px 5px rgba(0,0,0,0.25);
 }
-
-#s2photo {
-  background:radial-gradient(
-      rgba(0,0,0,0.05),
-      rgba(0,0,0,0.50)
-    ),
-    url(../assets/Photos/Teengirleatingaburger.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
+#explore_discover_photo {
+  background: url(../assets/Photos/searchandexplore1.png) no-repeat center center;
 }
 
-.photo {
+
+.info_section_photo {
   height: 100%;
-  background-position: center;
+  /*background-position: center;*/
   max-width: 50%;
   position: relative;
 }
 
-.words {
+.info_section_words {
   /*border-right: 1px solid white;*/
   height: 100%;
   max-width: 50%;
@@ -363,4 +378,10 @@ footer {
 .footer a {
   font-weight: 200;
   opacity: 0.75;
+}
+
+/****HELPER CLASSES****/
+/*TEXT SHADOW*/
+.shadows {
+  text-shadow: 0px 2px 8px rgba(0,0,0,0.65);
 }
