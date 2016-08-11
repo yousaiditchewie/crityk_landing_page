@@ -283,6 +283,10 @@ header {
   margin-bottom: 0px;
 }
 
+/*.info_section_photo {
+  background-size: cover;
+}*/
+
 @media screen and (max-width: 1200px) {
   .info_section_wrapper {
     height: 70vh;
@@ -290,6 +294,7 @@ header {
 }
 .info_section_photo {
   height: 100%;
+  /*background-size: cover;*/
 }
 
 /****EXPLORE & DISCOVER****/
@@ -325,6 +330,7 @@ header {
 }
 #explore_discover_photo {
   background: url(../assets/Photos/searchandexplore1.png) no-repeat center center;
+  background-size: cover;
 }
 
 
