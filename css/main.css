@@ -379,18 +379,28 @@ header {
   background-size: cover;
 }
 
-/*SPEAK FOODIE*/
+/****SPEAK FOODIE****/
 #speak_foodie_photo {
   background: url(../assets/Photos/Teengirleatingaburger.jpg) no-repeat center center;
   background-size: cover;
 }
 
-/*STALK, STASH & SHARE*/
+#speak_foodie img {
+  margin-top: 20px;
+  width: 70%;
+  height: auto;
+}
+/****STALK, STASH & SHARE****/
 #stalk_stash_share_photo {
   background: url(../assets/Photos/stalkstashshare.png) no-repeat center center;
   background-size: cover;
 }
 
+#stalk_stash_share img {
+  margin-top: 20px;
+  width: 70%;
+  height: auto;
+}
 
 
 
