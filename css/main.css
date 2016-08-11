@@ -369,8 +369,9 @@ header {
 /****EXPLORE & DISCOVER****/
 
 #explore_discover img {
-  heigh: 50%;
-  width: auto;
+  margin-top: 20px;
+  width: 70%;
+  height: auto;
 }
 
 #explore_discover_photo {
