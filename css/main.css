@@ -45,6 +45,7 @@ position it in the middle of its parent wrapper*/
   z-index: -10;
 }
 
+
 /*MAKESHIFT NAV-BAR*/
 header {
   width: 100%;
@@ -120,6 +121,28 @@ header {
   background-size: cover;
   background-position: center;
 }
+
+/****DISABLE VIDEO FOR MOBILE****/
+@media only screen
+  and (min-device-width: 300px)
+  and (max-device-width: 800px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #desktop iframe {
+      display: none;
+    }
+    .jumbotron{
+      z-index: -1;
+      max-height: 100vh;
+      background:
+        linear-gradient(
+          rgba(0,0,0,0.65),
+          rgba(0,0,0,0.45)
+        ),
+        url(../assets/Photos/JungeLeuteessenSushiinAsiaRestaurant.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+  }
 
 .main {
   text-align: center;
@@ -310,8 +333,8 @@ header {
   margin-right: 3%;
   font-size: 20px;
   font-weight: 300;
-  letter-spacing: 0.15px;
-  line-height: 27px;
+  /*letter-spacing: 0.15px;*/
+  /*line-height: 27px;*/
 }
 
 
@@ -345,10 +368,13 @@ header {
   }
 }
 
-@media screen and (max-width: 546px) {
+@media screen and (max-width: 700px) {
   .info_section_wrapper {
-    height: 500px;
+    height: 400px;
   }
+}
+
+@media screen and (max-width: 546px) {
   .info_section_words h2 {
     font-size: 25px;
   }
@@ -367,7 +393,6 @@ header {
 }
 
 /****EXPLORE & DISCOVER****/
-
 #explore_discover img {
   margin-top: 20px;
   width: 70%;
@@ -390,6 +415,7 @@ header {
   width: 70%;
   height: auto;
 }
+
 /****STALK, STASH & SHARE****/
 #stalk_stash_share_photo {
   background: url(../assets/Photos/stalkstashshare.png) no-repeat center center;
@@ -421,18 +447,20 @@ header {
 .footer {
   margin-top: 0px;
   margin-bottom: 0px;
-  background-color: #4A4A4A;
+  background-color: rgb(239,184,61);
+  color: #4a4a4a;
 }
 
 footer {
-  color: white;
-  background-color: #4A4A4A;
+  color: #4a4a4a;
+  background-color: rgb(239,184,61);
   padding-bottom: 10px;
 }
 
 .footer a {
+  color: #4a4a4a;
   font-weight: 200;
-  opacity: 0.75;
+  /*opacity: 0.75;*/
 }
 
 /****HELPER CLASSES****/
