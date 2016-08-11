@@ -69,12 +69,10 @@ header {
 }
 
 #contact {
-  /*margin: 30px;*/
   margin-left: 20px;
   margin-right: 20px;
   font-weight: 200;
   padding: 0px;
-  /*position: fixed;*/
 }
 
 #aboutuslink {
@@ -271,6 +269,7 @@ header {
   height: 50px;
   background: white;
 }
+
 /****INFO SECTION HELPERS****/
 #info_section {
   margin-bottom: 0px;
@@ -283,71 +282,116 @@ header {
   margin-bottom: 0px;
 }
 
-/*.info_section_photo {
-  background-size: cover;
-}*/
-
-@media screen and (max-width: 1200px) {
-  .info_section_wrapper {
-    height: 70vh;
-  }
-}
-.info_section_photo {
-  height: 100%;
-  /*background-size: cover;*/
-}
-
-/****EXPLORE & DISCOVER****/
-
-/*#explore_discover {
-  height: 720px;
-  background: white;
-  z-index: 1;
-  margin-bottom: 0px;
-}*/
-
-#explore_discover h2 {
-  margin-top: 15%;
-  margin-left: 5%;
-  font-weight: 200;
-}
-
-#explore_discover h5 {
-  font-weight: 200;
-  margin-left: 5%;
-  margin-right: 20%;
-  margin-bottom: 30px;
-}
-
-#explore_discover a {
-  color: white;
-  font-weight: 300;
-  margin-left: 15%;
-  padding: 5px;
-  border: 1px solid white;
-  border-radius: 5px;
-  box-shadow: 0px 1px 5px rgba(0,0,0,0.25);
-}
-#explore_discover_photo {
-  background: url(../assets/Photos/searchandexplore1.png) no-repeat center center;
-  background-size: cover;
-}
-
-
-.info_section_photo {
-  height: 100%;
-  /*background-position: center;*/
-  max-width: 50%;
-  position: relative;
-}
 
 .info_section_words {
-  /*border-right: 1px solid white;*/
   height: 100%;
   max-width: 50%;
   background-color: #007AFF;
   color: white;
 }
+
+.info_section_words h2 {
+  margin-top: 11%;
+  margin-left: 5%;
+  font-weight: 200;
+  font-size: 65px;
+}
+
+.info_section_words h5 {
+  margin-left: 5%;
+  margin-right: 20%;
+  margin-bottom: 30px;
+  font-size: 45px;
+  font-weight: 200;
+}
+
+.info_section_words p {
+  margin-left: 5%;
+  margin-right: 3%;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0.15px;
+  line-height: 27px;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .info_section_wrapper {
+    height: 600px;
+  }
+  .info_section_words h2 {
+    font-size: 50px;
+  }
+   .info_section_words h5 {
+    font-size: 30px;
+  }
+  .info_section_words p {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 882px) {
+  .info_section_wrapper {
+    height: 500px;
+  }
+  .info_section_words h2 {
+    font-size: 30px;
+  }
+  .info_section_words h5 {
+    font-size: 20px;
+  }
+  .info_section_words p {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 546px) {
+  .info_section_wrapper {
+    height: 500px;
+  }
+  .info_section_words h2 {
+    font-size: 25px;
+  }
+  .info_section_words h5 {
+    font-size: 17px;
+  }
+  .info_section_words p {
+    font-size: 9px;
+  }
+}
+
+.info_section_photo {
+  height: 100%;
+  max-width: 50%;
+  position: relative;
+}
+
+/****EXPLORE & DISCOVER****/
+
+#explore_discover img {
+  heigh: 50%;
+  width: auto;
+}
+
+#explore_discover_photo {
+  background: url(../assets/Photos/searchandexplore.png) no-repeat center center;
+  background-size: cover;
+}
+
+/*SPEAK FOODIE*/
+#speak_foodie_photo {
+  background: url(../assets/Photos/Teengirleatingaburger.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+/*STALK, STASH & SHARE*/
+#stalk_stash_share_photo {
+  background: url(../assets/Photos/stalkstashshare.png) no-repeat center center;
+  background-size: cover;
+}
+
+
+
 
 /*SIGN UP 2*/
 #signup2 {
@@ -366,13 +410,7 @@ header {
 .footer {
   margin-top: 0px;
   margin-bottom: 0px;
-  /*padding-top: 60px;*/
-  /*padding-bottom: 60px;*/
   background-color: #4A4A4A;
-  /*border-top: 1px solid rgba(224, 224, 224);*/
-  /*border-top-width: 1px;*/
-  /*border-top-style: solid;*/
-  /*border-top-color: rgb(224, 224, 224);*/
 }
 
 footer {
