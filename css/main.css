@@ -10,7 +10,7 @@
 }
 
 body {
-  backgroung: white;
+  /*background: white;*/
 }
 /*MAIN LANDING PAGE JUMBOTRON AND VIDEO*/
 
@@ -161,7 +161,7 @@ header {
 
 /*BREAK*/
 .break{
-  height: 100px;
+  height: 10px;
   background: white;
 }
 
@@ -169,6 +169,7 @@ header {
 /****ABOUT US****/
 
 #aboutus {
+  padding-top: 100px;
   background-color: white;
   margin-left: 0px;
   margin-right: 0px;
