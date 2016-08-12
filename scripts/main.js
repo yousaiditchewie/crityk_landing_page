@@ -1,8 +1,8 @@
-// (function() {
+(function() {
   var idx = 1;
 
   $(document).ready(function(){
-    console.log("JS ready!")
+    // console.log("JS ready!")
     $('.modal-trigger').leanModal();
     $('.parallax').parallax();
     if (!window.matchMedia('only screen and (max-device-width: 800px) and (-webkit-min-device-pixel-ratio: 2)').matches) {
@@ -45,7 +45,7 @@
   // FUNCTION FOR FADING OUT RIGHT
   // #1 in animation loop
   function fadeOutRight() {
-    console.log('fading out right');
+    // console.log('fading out right');
     topWords.classList.remove('fadeInLeft');
     bottom.classList.remove('fadeInLeft');
     signup.classList.remove('fadeInLeft');
@@ -58,7 +58,7 @@
   // FUNCTION FOR CHANGING WORDS
   // #2 in animation loop
   function changeWords() {
-    console.log('changing words ' + idx);
+    // console.log('changing words ' + idx);
     topWords.innerHTML = topSayings[idx];
     bottom.innerHTML   = bottomSayings[idx];
     signup.innerHTML   = signupSayings[idx];
@@ -71,14 +71,14 @@
   // FUNCTION FOR FADING IN LEFT
   // #3 in animation loop
   function fadeInLeft() {
-    console.log('fading in left');
+    // console.log('fading in left');
     topWords.classList.remove('fadeOutRight');
     bottom.classList.remove('fadeOutRight');
     signup.classList.remove('fadeOutRight');
     topWords.classList.add('fadeInLeft');
     bottom.classList.add('fadeInLeft');
     signup.classList.add('fadeInLeft');
-    setTimeout(fadeOutRight, 5000);
+    setTimeout(fadeOutRight, 5500);
   }
 
   // ELEVATOR JS VARIABLES AND FUNCTIONS
@@ -97,4 +97,4 @@
     element: aboutuslink,
     targetElement: document.querySelector("#aboutus")
     });
-// })();
+})();
