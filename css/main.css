@@ -203,7 +203,7 @@ header {
 }
 
 /*SPACER DIV TO PUSH ARROW BUTTON DOWN*/
-#spacer {
+#warning {
   text-align: center;
   font-size: 8px;
   margin-top: 10px;
@@ -215,19 +215,19 @@ header {
 }
 
 @media screen and (max-width: 1205px) {
-  #spacer {
+  #warning {
     margin-bottom: 50px;
   }
 }
 
 @media screen and (max-width: 797px) {
-  #spacer {
+  #warning {
     margin-bottom: 120px;
   }
 }
 
 @media screen and (max-width: 529px) {
-  #spacer {
+  #warning {
     margin-bottom: 160px;
   }
 }

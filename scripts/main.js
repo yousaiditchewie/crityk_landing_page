@@ -46,13 +46,9 @@
   // #1 in animation loop
   function fadeOutRight() {
     // console.log('fading out right');
-    topWords.classList.remove('fadeInLeft');
-    bottom.classList.remove('fadeInLeft');
-    signup.classList.remove('fadeInLeft');
-    topWords.classList.add('fadeOutRight');
-    bottom.classList.add('fadeOutRight');
-    signup.classList.add('fadeOutRight');
-    setTimeout(changeWords, 50);
+    removeFadeLeft();
+    addFadeRight();
+    setTimeout(changeWords, 250);
   };
 
   // FUNCTION FOR CHANGING WORDS
@@ -61,7 +57,7 @@
     // console.log('changing words ' + idx);
     topWords.innerHTML = topSayings[idx];
     bottom.innerHTML   = bottomSayings[idx];
-    signup.innerHTML   = signupSayings[idx];
+    // signup.innerHTML   = signupSayings[idx];
     idxIterator();
     setTimeout(fadeInLeft, 1000);
     // return idx;
@@ -72,13 +68,34 @@
   // #3 in animation loop
   function fadeInLeft() {
     // console.log('fading in left');
+    signup.innerHTML   = signupSayings[idx]; // placing this here prevents users from seeing the text change
+    removeFadeRight();
+    addFadeLeft();
+    setTimeout(fadeOutRight, 5500);
+  }
+
+  // FADE IN/OUT HELPER FUNCTIONS
+  function removeFadeRight() {
     topWords.classList.remove('fadeOutRight');
     bottom.classList.remove('fadeOutRight');
     signup.classList.remove('fadeOutRight');
+  }
+
+  function removeFadeLeft() {
+    signup.classList.remove('fadeInLeft');
+    topWords.classList.remove('fadeInLeft');
+    bottom.classList.remove('fadeInLeft');
+  }
+  function addFadeRight() {
+    signup.classList.add('fadeOutRight');
+    topWords.classList.add('fadeOutRight');
+    bottom.classList.add('fadeOutRight');
+  }
+
+  function addFadeLeft() {
     topWords.classList.add('fadeInLeft');
     bottom.classList.add('fadeInLeft');
     signup.classList.add('fadeInLeft');
-    setTimeout(fadeOutRight, 5500);
   }
 
   // ELEVATOR JS VARIABLES AND FUNCTIONS
@@ -97,4 +114,5 @@
     element: aboutuslink,
     targetElement: document.querySelector("#aboutus")
     });
+
 })();
