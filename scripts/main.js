@@ -1,10 +1,11 @@
 // (function() {
+  var idx = 1;
 
   $(document).ready(function(){
     console.log("JS ready!")
-    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
     $('.modal-trigger').leanModal();
     $('.parallax').parallax();
+    // setTimeout(fadeOutRight, 4000);
   });
 
   // ***ANIMATE AND CHANGE TITLES ON MAIN PAGE***
@@ -34,12 +35,45 @@
                        "SHARING IS CARING ON CRITYK"
                       ];
 
-  // FUNCTION FOR CHANGING WORDS
-  function changeWords(i) {
-    topWords.innerHTML = topSayings[i];
-    bottom.innerHTML = bottomSayings[i];
-    signup.innerHTML = signupSayings[i];
+  // FUNCTION FOR ITERATING THROUGH IDX
+  function idxIterator() {
+    return idx === 3 ? idx = 0 : idx++;
   };
+
+  // FUNCTION FOR FADING OUT RIGHT
+  // #1 in animation loop
+  function fadeOutRight() {
+    console.log('fading out right');
+    topWords.classList.remove('fadeInLeft');
+    bottom.classList.remove('fadeInLeft');
+    topWords.classList.add('fadeOutRight');
+    bottom.classList.add('fadeOutRight');
+    setTimeout(changeWords, 1000);
+  };
+
+  // FUNCTION FOR CHANGING WORDS
+  // #2 in animation loop
+  function changeWords() {
+    console.log('changing words ' + idx);
+    topWords.innerHTML = topSayings[idx];
+    bottom.innerHTML   = bottomSayings[idx];
+    signup.innerHTML   = signupSayings[idx];
+    idxIterator();
+    setTimeout(fadeInLeft, 1000);
+    // return idx;
+  };
+
+
+  // FUNCTION FOR FADING IN LEFT
+  // #3 in animation loop
+  function fadeInLeft() {
+    console.log('fading in left');
+    topWords.classList.remove('fadeOutRight');
+    bottom.classList.remove('fadeOutRight');
+    topWords.classList.add('fadeInLeft');
+    bottom.classList.add('fadeInLeft');
+    setTimeout(fadeOutRight, 5000);
+  }
 
   // ELEVATOR JS VARIABLES AND FUNCTIONS
   var chevron = document.getElementById("chevron");
