@@ -52,7 +52,7 @@
     topWords.classList.add('fadeOutRight');
     bottom.classList.add('fadeOutRight');
     signup.classList.add('fadeOutRight');
-    setTimeout(changeWords, 1000);
+    setTimeout(changeWords, 50);
   };
 
   // FUNCTION FOR CHANGING WORDS

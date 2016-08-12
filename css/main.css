@@ -204,10 +204,33 @@ header {
 
 /*SPACER DIV TO PUSH ARROW BUTTON DOWN*/
 #spacer {
+  text-align: center;
+  font-size: 8px;
+  margin-top: 10px;
+  font-weight: 200;
+  color: white;
   height: 175px;
-  width: 100%;
+  width: auto;
+  /*width: 100%;*/
 }
 
+@media screen and (max-width: 1205px) {
+  #spacer {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 797px) {
+  #spacer {
+    margin-bottom: 120px;
+  }
+}
+
+@media screen and (max-width: 529px) {
+  #spacer {
+    margin-bottom: 160px;
+  }
+}
 #chevron {
   /*bottom: 0;*/
 }
@@ -491,10 +514,18 @@ header {
 }
 
 #signup2 h3 {
-  font-weight: 300;
+  font-size: 45px;
+  font-weight: 400;
   color: #007AFF;
   margin-top: 0px;
+  margin-bottom: 10px;
   padding-top: 10px;
+}
+
+#signup2 p {
+  margin-top: 10px;
+  font-size: 32px;
+  font-weight: 200;
 }
 
 .footer {
