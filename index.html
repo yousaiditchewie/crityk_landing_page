@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>CRITYK</title>
+  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
   <!-- Compiled and minified Materialize CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
   <!-- <link rel="stylesheet" href="./css/mobile.css"> -->
+  <link rel="stylesheet" href="./css/animate.css">
   <link rel="stylesheet" href="./css/main.css">
-  <!-- <link rel="stylesheet" href="./css/fontstylesheet.css"> -->
-  <!-- <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css"> -->
   <!-- <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script> -->
-  <script   src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script>
   <!-- COMPILED AND MINIFIED MATERIALIZE JAVASCRIPT -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
 </head>
@@ -43,8 +42,8 @@
       <!-- CENTER CONTENT -->
       <div class="container valign-wrapper">
         <div class="main col s10 offset-s1">
-          <h3 class="white-text shadows" style="font-weight: 400">WE KNOW YOU LIKE FOOD</h3>
-          <h3 class="white-text shadows goodnews" style="font-weight: 200">GOOD NEWS! FOOD LIKES YOU TOO</h3>
+          <h3 id="topWords" class="white-text shadows animated fadeInLeft" style="font-weight: 400">WE KNOW YOU LIKE FOOD</h3>
+          <h3 id="bottom" class="white-text shadows goodnews animated fadeInLeft" style="font-weight: 200">GOOD NEWS! FOOD LIKES YOU TOO!</h3>
           <a id="signup" href="#signupmodal" class="white-text modal-trigger shadows">GET ALONG WITH FOOD ON CRITYK</a>
           <div id="spacer"></div>
           <a id="chevron" href="#break" class="col s12 center-align">

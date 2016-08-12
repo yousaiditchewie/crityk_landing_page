@@ -9,6 +9,16 @@
   display: none;
 }
 
+/****HELPER CLASSES****/
+/*TEXT SHADOW*/
+.shadows {
+  text-shadow: 0px 2px 8px rgba(0,0,0,0.65);
+}
+/*REMOVE DOM*/
+.remove {
+  display: none;
+}
+
 body {
   /*background: white;*/
 }
@@ -95,18 +105,6 @@ header {
   margin-bottom: 5%;
 }
 
-/*SIGN UP BUTTON*/
-#signup{
-  font-weight: 200;
-  margin-top: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border: 1px solid white;
-  border-radius: 3px;
-  box-shadow: 0px 1px 5px rgba(0,0,0,0.5);
-}
 
 
 .jumbotron{
@@ -153,6 +151,40 @@ header {
   position: relative;
 }
 
+#topWords {
+  /*animation-duration: 2s;*/
+  /*animation-name: fade;*/
+}
+
+#bottom {
+  /*animation-duration: 2s;*/
+  /*animation-name: fade;*/
+}
+
+/*SIGN UP BUTTON*/
+#signup{
+  font-weight: 200;
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid white;
+  border-radius: 3px;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.5);
+  /*animation-duration: 2s;*/
+  /*animation-name: fade;*/
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
 /*SPACER DIV TO PUSH ARROW BUTTON DOWN*/
 #spacer {
   height: 175px;
@@ -464,8 +496,3 @@ footer {
   /*opacity: 0.75;*/
 }
 
-/****HELPER CLASSES****/
-/*TEXT SHADOW*/
-.shadows {
-  text-shadow: 0px 2px 8px rgba(0,0,0,0.65);
-}
