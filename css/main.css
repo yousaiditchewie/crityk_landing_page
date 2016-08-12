@@ -1,8 +1,17 @@
 /*FONT FOR USE*/
-/*@font-face {
-  font-family: "articulat_cfbold", sans-serif;
+/*ARTICULAT FONT SYNTAX*/
+
+/*"articulat_cf"
+"articulat_cfmedium"
+"articulat_cfbold"
+"articulat_cftext"
+"articulat_cflight"
+"articulat_cfdemi_bold"*/
+
+html {
+  font-family: "articulat_cf", sans-serif;
   src: url(./fontstylesheet.css);
-}*/
+}
 
 /*HIDE MOBILE*/
 #mobile {
@@ -152,13 +161,17 @@ header {
 }
 
 #topWords {
-  font-weight: 400;
+  font-family: "articulat_cfbold", sans-serif;
+  font-weight: 700;
   font-size: 45px;
+  margin-bottom: ;
 }
 
 #bottom {
-  font-weight: 200;
+  font-family: "articulat_cflight", sans-serif;
+  font-weight: 100;
   font-size: 45px;
+  /*line-height: 78px;*/
 }
 
 /*RESPONSIVE FONT SIZE KEEPS THE CHEVRON BUTTON SPACED CORRECTLY*/
@@ -215,9 +228,9 @@ header {
 
 #warning p {
   padding-top: 100px;
-  text-align: center;
   font-size: 7px;
   font-weight: 400;
+  text-align: center;
 
 }
 

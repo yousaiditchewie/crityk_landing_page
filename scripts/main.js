@@ -6,7 +6,7 @@
     $('.modal-trigger').leanModal();
     $('.parallax').parallax();
     if (!window.matchMedia('only screen and (max-device-width: 800px) and (-webkit-min-device-pixel-ratio: 2)').matches) {
-    setTimeout(fadeOutRight, 5000);
+    // setTimeout(fadeOutRight, 5000);
     };
   });
 
@@ -48,7 +48,7 @@
     // console.log('fading out right');
     removeFadeLeft();
     addFadeRight();
-    setTimeout(changeWords, 250);
+    // setTimeout(changeWords, 250);
   };
 
   // FUNCTION FOR CHANGING WORDS
