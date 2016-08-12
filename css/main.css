@@ -204,14 +204,21 @@ header {
 
 /*SPACER DIV TO PUSH ARROW BUTTON DOWN*/
 #warning {
-  text-align: center;
-  font-size: 8px;
+  padding: 0;
+  /*text-align: center;*/
   margin-top: 10px;
-  font-weight: 200;
   color: white;
   height: 175px;
   width: auto;
   /*width: 100%;*/
+}
+
+#warning p {
+  padding-top: 100px;
+  text-align: center;
+  font-size: 7px;
+  font-weight: 400;
+
 }
 
 @media screen and (max-width: 1205px) {
