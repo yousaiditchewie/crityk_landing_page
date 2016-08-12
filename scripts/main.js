@@ -5,7 +5,9 @@
     console.log("JS ready!")
     $('.modal-trigger').leanModal();
     $('.parallax').parallax();
-    // setTimeout(fadeOutRight, 4000);
+    if (!window.matchMedia('only screen and (max-device-width: 800px) and (-webkit-min-device-pixel-ratio: 2)').matches) {
+    setTimeout(fadeOutRight, 4000);
+    };
   });
 
   // ***ANIMATE AND CHANGE TITLES ON MAIN PAGE***
@@ -46,8 +48,10 @@
     console.log('fading out right');
     topWords.classList.remove('fadeInLeft');
     bottom.classList.remove('fadeInLeft');
+    signup.classList.remove('fadeInLeft');
     topWords.classList.add('fadeOutRight');
     bottom.classList.add('fadeOutRight');
+    signup.classList.add('fadeOutRight');
     setTimeout(changeWords, 1000);
   };
 
@@ -70,16 +74,27 @@
     console.log('fading in left');
     topWords.classList.remove('fadeOutRight');
     bottom.classList.remove('fadeOutRight');
+    signup.classList.remove('fadeOutRight');
     topWords.classList.add('fadeInLeft');
     bottom.classList.add('fadeInLeft');
+    signup.classList.add('fadeInLeft');
     setTimeout(fadeOutRight, 5000);
   }
 
   // ELEVATOR JS VARIABLES AND FUNCTIONS
   var chevron = document.getElementById("chevron");
+  var logo = document.getElementById("logo");
+  var aboutuslink = document.getElementById("aboutuslink");
   new Elevator({
     element: chevron,
     targetElement: document.querySelector("#aboutus")
     });
-
+  new Elevator({
+    element: logo,
+    targetElement: document.querySelector("#aboutus")
+    });
+  new Elevator({
+    element: aboutuslink,
+    targetElement: document.querySelector("#aboutus")
+    });
 // })();

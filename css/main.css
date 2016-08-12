@@ -20,7 +20,7 @@
 }
 
 body {
-  /*background: white;*/
+  background: white;
 }
 /*MAIN LANDING PAGE JUMBOTRON AND VIDEO*/
 
@@ -112,7 +112,7 @@ header {
   max-height: 100vh;
   background:
     linear-gradient(
-      rgba(0,0,0,0.65),
+      rgba(0,0,0,0.85),
       rgba(0,0,0,0.45)
     );
     /*url(../assets/Photos/JungeLeuteessenSushiinAsiaRestaurant.jpg);*/
@@ -152,13 +152,39 @@ header {
 }
 
 #topWords {
-  /*animation-duration: 2s;*/
-  /*animation-name: fade;*/
+  font-weight: 400;
+  font-size: 45px;
 }
 
 #bottom {
-  /*animation-duration: 2s;*/
-  /*animation-name: fade;*/
+  font-weight: 200;
+  font-size: 45px;
+}
+
+/*RESPONSIVE FONT SIZE KEEPS THE CHEVRON BUTTON SPACED CORRECTLY*/
+@media screen and (max-width: 1205px) {
+  #topWords {
+    font-size: 35px;
+  }
+  #bottom {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 797px) {
+  #topWords {
+    font-size: 25px;
+  }
+  #bottom {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 529px) {
+  #topWords {
+    font-size: 20px;
+  }
+  #bottom {
+    font-size: 20px;
+  }
 }
 
 /*SIGN UP BUTTON*/
@@ -176,21 +202,15 @@ header {
   /*animation-name: fade;*/
 }
 
-@keyframes fade {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
 /*SPACER DIV TO PUSH ARROW BUTTON DOWN*/
 #spacer {
   height: 175px;
   width: 100%;
 }
 
+#chevron {
+  /*bottom: 0;*/
+}
 /*BREAK*/
 .break{
   height: 10px;
