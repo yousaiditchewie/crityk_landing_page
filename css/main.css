@@ -528,6 +528,10 @@ header {
   font-weight: 200;
 }
 
+#social_links {
+  display: inline;
+}
+
 .footer {
   margin-top: 0px;
   margin-bottom: 0px;
