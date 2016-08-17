@@ -234,6 +234,15 @@ header {
 
 }
 
+@media screen and (max-width: 1920px) {
+  #warning {
+    margin-bottom: 200px;
+  }
+  #warning p {
+    font-size: 9px;
+  }
+}
+
 @media screen and (max-width: 1205px) {
   #warning {
     margin-bottom: 50px;
@@ -428,6 +437,36 @@ header {
 }
 
 
+@media screen and (max-width: 1920px) {
+  .info_section_wrapper {
+    height: 1076px;
+  }
+  .info_section_words h2 {
+    font-size: 75px;
+  }
+   .info_section_words h5 {
+    font-size: 55px;
+  }
+  .info_section_words p {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 1684px) {
+  .info_section_wrapper {
+    height: 850px;
+  }
+  .info_section_words h2 {
+    font-size: 70px;
+  }
+   .info_section_words h5 {
+    font-size: 50px;
+  }
+  .info_section_words p {
+    font-size: 20px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .info_section_wrapper {
     height: 600px;
@@ -489,6 +528,18 @@ header {
   height: auto;
 }
 
+@media screen and (max-width: 1920px) {
+  #explore_discover img {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 1684px) {
+  #explore_discover img {
+    margin-top: 70px;
+  }
+}
+
 #explore_discover_photo {
   background: url(../assets/Photos/searchandexplore.png) no-repeat center center;
   background-size: cover;
@@ -506,6 +557,18 @@ header {
   height: auto;
 }
 
+@media screen and (max-width: 1920px) {
+  #speak_foodie img {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 1684px) {
+  #speak_foodie img {
+    margin-top: 70px;
+  }
+}
+
 /****STALK, STASH & SHARE****/
 #stalk_stash_share_photo {
   background: url(../assets/Photos/stalkstashshare.png) no-repeat center center;
@@ -518,7 +581,17 @@ header {
   height: auto;
 }
 
+@media screen and (max-width: 1920px) {
+  #stalk_stash_share img {
+    margin-top: 80px;
+  }
+}
 
+@media screen and (max-width: 1684px) {
+  #stalk_stash_share img {
+    margin-top: 70px;
+  }
+}
 
 /*SIGN UP 2*/
 #signup2 {
