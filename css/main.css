@@ -243,6 +243,12 @@ header {
   }
 }
 
+@media screen and (max-width: 1440px) {
+  #warning {
+    margin-bottom: 10px;
+  }
+}
+
 @media screen and (max-width: 1205px) {
   #warning {
     margin-bottom: 50px;
