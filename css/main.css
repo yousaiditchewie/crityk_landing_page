@@ -243,6 +243,14 @@ header {
   }
 }
 
+@media screen and (max-width: 1680px) {
+  #warning {
+    margin-bottom: 60px;
+  }
+  #warning p {
+    font-size: 8px;
+  }
+}
 @media screen and (max-width: 1440px) {
   #warning {
     margin-bottom: 10px;
@@ -461,7 +469,7 @@ header {
   }
 }
 
-@media screen and (max-width: 1684px) {
+@media screen and (max-width: 1680px) {
   .info_section_wrapper {
     height: 850px;
   }
@@ -558,9 +566,9 @@ header {
   }
 }
 
-@media screen and (max-width: 1684px) {
+@media screen and (max-width: 1680px) {
   #explore_discover img {
-    margin-top: 70px;
+    margin-top: 50px;
   }
 }
 
@@ -594,9 +602,9 @@ header {
   }
 }
 
-@media screen and (max-width: 1684px) {
+@media screen and (max-width: 1680px) {
   #speak_foodie img {
-    margin-top: 70px;
+    margin-top: 50px;
   }
 }
 
@@ -624,9 +632,9 @@ header {
   }
 }
 
-@media screen and (max-width: 1684px) {
+@media screen and (max-width: 1680px) {
   #stalk_stash_share img {
-    margin-top: 70px;
+    margin-top: 50px;
   }
 }
 
