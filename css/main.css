@@ -247,6 +247,9 @@ header {
   #warning {
     margin-bottom: 10px;
   }
+  #warning p {
+    font-size: 7px;
+  }
 }
 
 @media screen and (max-width: 1205px) {
