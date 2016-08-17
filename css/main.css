@@ -478,10 +478,10 @@ header {
     height: 780px;
   }
   .info_section_words h2 {
-    font-size: 70px;
+    font-size: 65px;
   }
    .info_section_words h5 {
-    font-size: 50px;
+    font-size: 30px;
   }
   .info_section_words p {
     font-size: 20px;
@@ -561,7 +561,7 @@ header {
   }
 }
 
-@media screen and (max-width: 1684px) {
+@media screen and (max-width: 1440px) {
   #explore_discover img {
     margin-top: 20px;
   }
@@ -582,6 +582,7 @@ header {
   margin-top: 20px;
   width: 70%;
   height: auto;
+  z-index: 0;
 }
 
 @media screen and (max-width: 1920px) {
@@ -596,7 +597,7 @@ header {
   }
 }
 
-@media screen and (max-width: 1684px) {
+@media screen and (max-width: 1440px) {
   #speak_foodie img {
     margin-top: 20px;
   }
@@ -626,9 +627,9 @@ header {
   }
 }
 
-@media screen and (max-width: 1684px) {
+@media screen and (max-width: 1440px) {
   #stalk_stash_share img {
-    margin-top: 20px;
+    margin-top: 15px;
   }
 }
 
@@ -637,6 +638,7 @@ header {
   background: white;
   padding-top: 20px;
   padding-bottom: 30px;
+  z-index: 2;
 }
 
 #signup2 h3 {
