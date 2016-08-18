@@ -5,9 +5,9 @@
     // console.log("JS ready!")
     $('.modal-trigger').leanModal();
     $('.parallax').parallax();
-    if (!window.matchMedia('only screen and (max-device-width: 800px) and (-webkit-min-device-pixel-ratio: 2)').matches) {
+    // if (!window.matchMedia('only screen and (max-device-width: 800px) and (-webkit-min-device-pixel-ratio: 2)').matches) {
     setTimeout(fadeOutRight, 5000);
-    };
+    // };
   });
 
   // ***ANIMATE AND CHANGE TITLES ON MAIN PAGE***
@@ -58,7 +58,7 @@
     topWords.innerHTML = topSayings[idx];
     bottom.innerHTML   = bottomSayings[idx];
     // signup.innerHTML   = signupSayings[idx];
-    idxIterator();
+    // idxIterator();
     setTimeout(fadeInLeft, 10);
     // return idx;
   };
@@ -69,6 +69,7 @@
   function fadeInLeft() {
     // console.log('fading in left');
     signup.innerHTML   = signupSayings[idx]; // placing this here prevents users from seeing the text change
+    idxIterator();
     removeFadeRight();
     addFadeLeft();
     setTimeout(fadeOutRight, 5500);

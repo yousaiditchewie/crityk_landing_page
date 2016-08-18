@@ -1,11 +1,21 @@
+/*SMART PHONES*/
+
 @media only screen
   and (min-device-width: 300px)
   and (max-device-width: 667px)
+  and (max-device-width: 1024px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
+
+  body, html {
+   width: auto !important;
+   overflow-x: hidden !important;
+  }
+
   /*HIDE DESKTOP*/
-  #welcome {
-    /*display: none;*/
+  #desktop {
+    display: none;
+    width: 100%;
   }
 
   /*MAKESHIFT NAV-BAR*/
@@ -26,6 +36,7 @@
     background-size: cover;
     background-position: center;
   }
+
 }/*END OF MEDIA QUERY*/
 
 
@@ -144,3 +155,25 @@
     /*border-top-color: rgb(224, 224, 224);*/
   }
 
+/*TABLATES*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)  {
+
+  #desktop {
+    display: none;
+  }
+
+  .jumbotron{
+    z-index: 1;
+    max-height: 100vh;
+    background:
+      linear-gradient(
+        rgba(0,0,0,0.65),
+        rgba(0,0,0,0.45)
+      ),
+      url(../assets/Photos/JungeLeuteessenSushiinAsiaRestaurant.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+}

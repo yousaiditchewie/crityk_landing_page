@@ -23,7 +23,7 @@ html {
 .shadows {
   text-shadow: 0px 2px 8px rgba(0,0,0,0.65);
 }
-/*REMOVE DOM*/
+/*REMOVE ELEMENT FROM DOM*/
 .remove {
   display: none;
 }
@@ -34,7 +34,6 @@ body {
 /*MAIN LANDING PAGE JUMBOTRON AND VIDEO*/
 
 /*VIDEO CSS*/
-
 /* Makes a fixed background wrapper
 which the user cannot interact with */
 
