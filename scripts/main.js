@@ -102,6 +102,7 @@
   // ELEVATOR JS VARIABLES AND FUNCTIONS
   var chevron = document.getElementById("chevron");
   var logo = document.getElementById("logo");
+  var logoM = document.getElementById("logoM");
   var aboutuslink = document.getElementById("aboutuslink");
   new Elevator({
     element: chevron,
@@ -109,6 +110,10 @@
     });
   new Elevator({
     element: logo,
+    targetElement: document.querySelector("#aboutus")
+    });
+  new Elevator({
+    element: logoM,
     targetElement: document.querySelector("#aboutus")
     });
   new Elevator({
