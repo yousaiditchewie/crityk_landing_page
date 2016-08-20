@@ -6,7 +6,7 @@
     $('.modal-trigger').leanModal();
     $('.parallax').parallax();
     // if (!window.matchMedia('only screen and (max-device-width: 800px) and (-webkit-min-device-pixel-ratio: 2)').matches) {
-    setTimeout(fadeOutRight, 5000);
+    setTimeout(fadeOutRight, 5500);
     // };
   });
 
@@ -72,7 +72,7 @@
     idxIterator();
     removeFadeRight();
     addFadeLeft();
-    setTimeout(fadeOutRight, 5500);
+    setTimeout(fadeOutRight, 6000);
   }
 
   // FADE IN/OUT HELPER FUNCTIONS

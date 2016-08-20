@@ -53,6 +53,7 @@
     z-index: 1;
     /*height: 100%;*/
     height: 100vh;
+    /*min-height: ;*/
     background:
       linear-gradient(
         rgba(0,0,0,0.65),
@@ -122,6 +123,33 @@
     width: auto;
   }
 
+  /*LANDSCAPE FIXES*/
+  @media (orientation: landscape) {
+    #warning {
+      display: none;
+    }
+    #chevron {
+      display: none;
+    }
+    #critykLogo {
+      height: 50px;
+      width: auto;
+    }
+    #critykBrand {
+      height: 50px;
+      width: auto;
+    }
+    .main {
+      margin-top: 10%;
+    }
+    #topWords {
+      font-size: 50px;
+    }
+    #bottom {
+      font-size: 45px;
+      margin-bottom: 50px;
+    }
+  }
   /*BREAK*/
 
   /*ABOUT US*/
