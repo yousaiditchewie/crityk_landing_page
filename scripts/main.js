@@ -31,10 +31,10 @@
                       ];
 
   // VARIABLES FOR SIGNUP SAYINGS
-  var signupSayings = ["GET ALONG WITH FOOD ON CRITYK",
-                       "TALK TO YOUR FOOD ON CRITYK",
-                       "CRITYK, THE BEST PART OF YOUR DATE",
-                       "SHARING IS CARING ON CRITYK"
+  var signupSayings = ["KEEP ME IN THE LOOP",
+                       "KEEP ME IN THE LOOP",
+                       "KEEP ME IN THE LOOP",
+                       "KEEP ME IN THE LOOP"
                       ];
 
   // FUNCTION FOR ITERATING THROUGH IDX
