@@ -166,6 +166,7 @@
   /*INFO SECTION*/
   .info_section_wrapper {
     height: 950px;
+    z-index: 4;
   }
   .info_section_words h2 {
     font-size: 80px;
