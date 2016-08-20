@@ -125,6 +125,7 @@
 
   /*LANDSCAPE FIXES*/
   @media (orientation: landscape) {
+    /*REMOVE TEXT SHADOWS TO AVOID SHADOW ARTIFACTS*/
     .shadows {
       text-shadow: none;
     }
