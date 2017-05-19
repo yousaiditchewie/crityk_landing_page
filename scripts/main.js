@@ -1,4 +1,5 @@
 (function() {
+  // GLOBAL INDEX USED FOR ALL SAYINGS ARRAYS
   var idx = 1;
 
   $(document).ready(function(){
